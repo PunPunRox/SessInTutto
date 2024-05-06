@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SessInTutto</title>
+    <link rel="icon" href="../img/logo.PNG" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/my-style.css">
+
+    <meta name="DC.title" content="SessInTutto">
+    <meta name="DC.creator" content="Leonardo Fratoni">
+    <meta name="DC.publisher" content="Il publisher">
+    <meta name="DC.date" content="12-04-2024">
+    <meta name="DC.description" content="Compendio di scandali e rivoluzioni a tema sessuale nell'arte (Film, Arti visive, Musica e molto altro)">
+    <meta name="DC.subject" content="art taboo scandal">
+    <meta name="DC.language" content="it">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark">
+    <div class="container-fluid">
+        <div id="mysidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn text-center mb-4" onclick="closeNav()">×</a>
+            <a href="Catalogo.html">Catalogo</a>
+            <a href="artiVisive.html">- Arti visive</a>
+            <a href="#">- Cinema</a>
+            <a href="#">- Musica</a>
+            <a href="#">- Altro</a>
+            <a href="#">Scrivi per noi!</a>
+            <a href="#">Merch</a>
+            <form class="search-navbar" action="">
+                <input type="text" placeholder="Cerca Scandalo" name="search">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="inline-nav">
+            <span class="burgermenu" onclick="openNav()"><i class="fas fa-bars" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="container d-flex">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="Logo" style="max-height: 55px;">
+            </a>
+            <div class="text-center">
+                <a id="titolo" href="index.html">
+                    <h1>SessInTutto</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <form class="d-flex">
+                <button class="btn btn-outline-light" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav aria-label="breadcrumb" class="mt-3" >
+    <ol class="breadcrumb bg-dark-subtle">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Arti visive</li>
+    </ol>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row" >
+        <!-- Filtri di ricerca -->
+        <div class="col-lg-3">
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Filtri di ricerca</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="periodo" class="form-label">Periodo</label>
+                            <select class="form-select" id="periodo">
+                                <option>Tutti</option>
+                                <option>1600-1700</option>
+                                <option>1700-1800</option>
+                                <option>1800-1900</option>
+                                <option>1900-OGGI</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ordina" class="form-label">Ordina per</label>
+                            <select class="form-select" id="ordina">
+                                <option>Cronologico</option>
+                                <option>Data di pubblicazione</option>
+                                <option>Ordine alfabetico</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="search" class="form-label">Filtra per parola chiave</label>
+                            <input type="text" placeholder="Parola chiave" id="search">
+                        </div>
+                        <button type="submit" class="btn btn-purple">Applica filtri</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <h2 class="text-center mb-4">Arti Visive</h2>
+            <!-- Contenuto principale -->
+            <section class="container my-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="../img/colazione.jpg" class="card-img" alt="..." style="max-block-size: 300px">
+                            <div class="card-body">
+                                <h5 class="card-title">Colazione sull'erba</h5>
+                                <p class="card-text">Lo scandalo più famoso</p>
+                                <p class="card-text">Autore Articolo: Leonardo Fratoni</p>
+                                <p class="card-text">Data pubblicazione: 27 aprile 2024</p>
+                                <a href="scandal.html" class="btn btn-purple">Leggi di più</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="../img/ilSonno.jpg" class="card-img" alt="..." style="max-block-size: 300px">
+                            <div class="card-body">
+                                <h5 class="card-title">Titolo Articolo 1</h5>
+                                <p class="card-text">Descrizione breve dell'articolo.</p>
+                                <p class="card-text">Autore: Nome Autore</p>
+                                <p class="card-text">Data pubblicazione: 27 aprile 2024</p>
+                                <a href="#" class="btn btn-purple">Leggi di più</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="../img/maja-desnuda-museo-del-pradofxd-0dd152-1024.jpg" class="card-img" alt="..." style="max-block-size: 300px">
+                            <div class="card-body">
+                                <h5 class="card-title">Titolo Articolo 1</h5>
+                                <p class="card-text">Descrizione breve dell'articolo.</p>
+                                <p class="card-text">Autore: Nome Autore</p>
+                                <p class="card-text">Data pubblicazione: 27 aprile 2024</p>
+                                <a href="#" class="btn btn-purple">Leggi di più</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link " href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link bg-dark" href="#" style="color:var(--bs-purple)">1</a></li>
+        <li class="page-item"><a class="page-link bg-dark" href="#" style="color:var(--bs-purple)">2</a></li>
+        <li class="page-item"><a class="page-link bg-dark" href="#" style="color:var(--bs-purple)">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+<footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center">
+                <p>Licenza Creative Commons</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <p>Ultimo aggiornamento: Maggio 2024</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="webProjectPlan.html" class="text-light">Web Project Plan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/navbar.js"></script>
+
+</body>
+</html>
